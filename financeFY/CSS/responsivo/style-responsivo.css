@@ -1,0 +1,44 @@
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 0.6rem
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .containerCabec,
+    .imgLogo {
+        display: none;
+    }
+
+    .menuNav {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    html {
+        font-size: 0.7rem;
+    }
+
+    .itemNav {
+        font-size: 0.9rem;
+    }
+}

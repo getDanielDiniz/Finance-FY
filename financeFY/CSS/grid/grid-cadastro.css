@@ -1,0 +1,58 @@
+.wrapper {
+    grid-template: repeat(6, auto) / 20% 1fr;
+    gap: 10px;
+ }
+
+header {
+    grid-area: 1/1/2/3;
+}
+aside{
+    grid-area: 3/1/6/2;
+}
+
+.mesVig {
+    grid-area: 2/1/3/3;
+}
+
+/*grid específico da tag main*/
+main{
+    /*posição da main no todo*/
+    grid-area: 3/2/5/3;
+
+    /*template da main*/
+    display: grid;
+    grid-template: repeat(3,auto) / 1fr 1fr
+}
+
+.secaoCadastrada:nth-child(3) {
+    grid-area: 2/1/3/3;
+}
+
+.itemCadastrado {
+    display: grid;
+    grid-template: auto / 2fr 0.7fr 0.3fr;
+} 
+
+.areaResultados {
+    grid-area: 3/1/4/3;
+
+    display:grid;
+    grid-template: repeat(3,auto)/repeat(2, 1fr);
+}
+
+.resultados {
+    grid-area: 1/1/3/3;
+}
+
+.voltar {
+    grid-area: 3/1/4/2;
+}
+
+.enviar {
+    grid-area: 3/2/4/3;
+}
+
+
+footer{
+    grid-area: 6/1/7/3;
+}

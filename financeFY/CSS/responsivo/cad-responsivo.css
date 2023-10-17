@@ -1,0 +1,52 @@
+@media screen and (max-width:1200px) {
+    .botao {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    
+    .formularioCad {
+        width: 100%;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .botaoDelet {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    aside {
+        grid-area: 3/1/4/3;
+    }
+
+    main {
+        grid-area: 4/1/5/3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secaoCadastrada {
+        min-height: fit-content;
+    }
+
+    .perfilInvest {
+        display: none;
+    }
+
+    .botaoDelet {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+}

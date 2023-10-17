@@ -1,0 +1,74 @@
+:root {
+    --bg-inverso: linear-gradient(#202f33,#45635B 70%);
+    --verde-claro_bg: #45635B;
+    --verde-escuro_bg: #202f33; 
+    --gradiente-bg: linear-gradient(#45635B ,#202f33 70%);
+    --dourado-shadow: #efb810;
+    --cor-texto: #d9d9d9;
+}
+
+.mesVig {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.625rem;
+}
+
+main{
+    gap: 10px;
+    padding: 10px;
+}
+
+.secaoCadastrada {
+    background: var(--bg-inverso);
+    min-height: 50vh;
+}
+
+.secaoCadastrada:nth-child(3) {
+    min-height: auto;
+}
+
+
+.listaCadastrada {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.itemCadastrado {
+    background: var(--verde-escuro_bg);
+    border-radius: 30px;
+    padding: 5px;
+    border: var(--amarelo-botao) 1px solid;
+    box-shadow: var(--dourado-shadow) 2px 2px 9px; 
+    font-size: 0.85rem;
+    align-items: center;   
+}
+
+.botaoDelet {
+    background: var(--verde-escuro_bg);
+    border: none;
+    border-radius: 50%;
+    color: var(--cor-texto);
+    transition: 0.3s;
+}
+
+.botaoDelet:hover {
+    color: #ff0000;
+}
+.itemResultado {
+    display: flex;
+    justify-content: space-between;
+    background: var(--verde-claro_bg);
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: #000000 2px 2px 9px;
+}
+
+.itemResultado:nth-child(2),
+.itemResultado:nth-child(4){
+
+    background: var(--verde-escuro_bg);
+}

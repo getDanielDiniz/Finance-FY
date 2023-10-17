@@ -1,0 +1,142 @@
+:root {
+    --verde-claro_bg: #45635B;
+    --verde-escuro_bg: #202f33; 
+    --cor-texto: #d9d9d9;
+    --gradiente-bg: linear-gradient(#45635B ,#202f33 70%);
+    --dourado-shadow: #efb810;
+    --amarelo-botao: #a0aa55;
+    --cor-botao_ativo: #50552b;
+}
+
+html {
+    font-family: 'Kalam', cursive;
+    color: var(--cor-texto);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    background: var(--gradiente-bg);
+    border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 30px;
+    border: var(--cor-texto) 0.125px solid;
+    height: 10px;
+}
+
+.campoCadastro:focus {
+    outline: none;
+    box-shadow: var(--dourado-shadow) 2px 2px 9px;
+    border: var(--dourado-shadow) 1px solid;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+body {
+    background: var(--gradiente-bg);
+}
+
+header {
+    display: flex;
+    background: var(--verde-escuro_bg);
+    box-shadow: #000000 0 10px 20px;
+}
+
+.containerCabec {
+    background: url('../img/logoBg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.imgLogo {
+    width: 25%;
+}
+
+.menuNav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.itemNav {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.itemNav:hover {
+    text-shadow: var(--dourado-shadow) 3px 4px 7px;
+    font-size: 1.8rem;
+}
+
+h1,h2,h3,
+h4,h5,h6,
+summary, 
+.botao,
+.cadastrar,
+.itemNav, .atualizar {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.secao{
+    border-radius: 10px;
+    background: var(--verde-escuro_bg);
+    padding: 10px;  
+}
+.itemContainer{
+    border-radius: 30px;
+    color: var(--cor-texto);
+    padding: 0 5px;
+}
+
+.campoCadastro {
+    background: var(--verde-claro_bg);
+    border: none;
+    font-size: 0.8rem;
+}
+
+.campoCadastro::placeholder {
+    color: var(--cor-texto);
+}
+
+.flexCentral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    border: none;
+    background: var(--amarelo-botao);
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    cursor: pointer;
+    box-shadow: var(--amarelo-botao) 2px 2px 9px;
+    background: var(--cor-botao_ativo);
+}
+
+.reais::before {
+    content: "R$ ";
+}
+
+footer {
+    background: var(--verde-escuro_bg);
+    height: 100px;
+}

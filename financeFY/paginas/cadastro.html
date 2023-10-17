@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Finance FY</title>
+    <link rel="shortcut icon" href="../img/Desktop - 1logo.png">
+
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mainCadastro.css">
+    <link rel="stylesheet" href="../CSS/cadastro-perfil.css">
+    <link rel="stylesheet" href="../CSS/grid/grid-cadastro.css">
+    <link rel="stylesheet" href="../CSS/responsivo/cad-responsivo.css">
+    <link rel="stylesheet" href="../CSS/responsivo/style-responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="containerCabec flexCentral">
+                <img src="../img/Desktop - 1logo.png" class="imgLogo">
+            </div>
+            <nav class="menuNav">
+                <li><a class="itemNav" href="../index.html">Inicio</a></li>
+                <li><a class="itemNav" href="cadastro.html">Cadastro</a></li>
+                <li><a class="itemNav" href="relatorios.html">Relatórios</a></li>
+            </nav>
+        </header>
+
+        <aside>
+            <div class="lateral">
+
+                <section class="cadastro secao">
+                    <h2>Cadastro:</h2>
+                    <form class="formularioCad" id="formularioCad">
+                        <label for="tipo">Tipo de Cadastro:</label>
+                        <select name="tipo" class="campoCadastro itemContainer" id="tipo">
+                            <option value="receita">Receita</option>
+                            <option value="despesa">Despesa</option>
+                            <option value="economiaMen">Economia Mensal</option>
+                            <option value="economiaPrev">Economia Prévia</option>
+                            <option value="resgate">Resgate de Economia</option>
+                        </select>
+                        <label for="nome">Nome</label>
+                        <input class="campoCadastro itemContainer" type="text" name="nome" id="nome" required>
+                        <label for="valor">Valor:</label>
+                        <input class="campoCadastro itemContainer" type="number" step="any" name="valor" id="valor" required>
+                        <input type="submit" class="botao itemContainer" value="Cadastrar">
+                    </form>
+                </section>
+
+                <details class="perfilInvest secao" id="perfilInvest">
+                    <summary id="summary">Conheça o seu perfil de investidor:</summary>
+                    <form class="formInvest" id="formPerfilInv">
+
+                        <div>
+                            <p>1 - Você possui alguma experiência com investimentos?</p>
+                            <input class="multiplaEsc" type="radio" id="Sim" name="XP" value="3">
+                            <label for="Sim">Sim</label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="Não" name="XP" value="1">
+                            <label for="Não">Não</label>
+                        </div>
+
+                        <div>
+                            <p>2 - O que você mais valoriza no momento de investir?</p>
+                            <input class="multiplaEsc" type="radio" id="Buscar maiores retornos" name="maisValoriza"
+                                value="3">
+                            <label for="Buscar maiores retornos">Buscar maiores retornos </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="Equilíbrio entre segurança e rentabilidade"
+                                name="maisValoriza" value="1">
+                            <label for="Equilíbrio entre segurança e rentabilidade">Equilíbrio entre segurança e
+                                rentabilidade </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="Proteger meu patrimônio, evitando perdas"
+                                name="maisValoriza" value="2">
+                            <label for="Proteger meu patrimônio, evitando perdas">Proteger meu patrimônio, evitando
+                                perdas </label>
+                            <br>
+                        </div>
+                        <div>
+                            <p>3 - O que você faria se seus investimentos variassem entre retornos positivos e
+                                negativos?</p>
+                            <input class="multiplaEsc" type="radio" id="apresentarRisco"
+                                name="retornosPositivosNegativos" value="2">
+                            <label for="apresentarRisco">Analisaria com tranquilidade, pois esse cenário pode apresentar
+                                risco </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="resgatarTudo" name="retornosPositivosNegativos"
+                                value="1">
+                            <label for="resgatarTudo">Resgataria tudo </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="apresentarOportunidade"
+                                name="retornosPositivosNegativos" value="3">
+                            <label for="apresentarOportunidade">Analisaria com tranquilidade, pois esse cenário pode
+                                apresentar oportunidade </label>
+                        </div>
+
+                        <div>
+                            <p>4 - O que você costuma fazer quando recebe um recurso extra?</p>
+                            <input class="multiplaEsc" type="radio" id="acertoVida" name="recursoExtra" value="1">
+                            <label for="acertoVida">Acerto minha vida financeira </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="gastoParte" name="recursoExtra" value="3">
+                            <label for="gastoParte">Gasto a maior parte com experiências que me dão prazer e invisto o
+                                restante </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="reservoParte" name="recursoExtra" value="2">
+                            <label for="reservoParte">Reservo alguma parte, mantendo minha estratégia de investimentos
+                            </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="maisArrojada" name="recursoExtra" value="4">
+                            <label for="maisArrojada">Aproveito para aplicar uma parte em opções mais arrojadas </label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <p>5 - Considerando suas necessidades futuras e orçamento, qual é a sua expectativa em
+                                relação aos seus investimentos? </p>
+                            <input class="multiplaEsc" type="radio" id="naoPlanejo" name="necessidadeFutura" value="3">
+                            <label for="naoPlanejo">Não planejo nesse momento resgatar meus investimentos e nem realizar
+                                novas aplicações </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="novasAplicacoes" name="necessidadeFutura"
+                                value="4">
+                            <label for="novasAplicacoes">Não planejo nesse momento resgatar meus investimentos e
+                                pretendo realizar novas aplicações </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="possoPrecisar" name="necessidadeFutura"
+                                value="2">
+                            <label for="possoPrecisar">Posso precisar de parte dos meus investimentos para pagar
+                                despesas no curto prazo </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="complementarRenda" name="necessidadeFutura"
+                                value="1">
+                            <label for="complementarRenda">Conto com esses investimentos para complementar minha renda
+                            </label>
+                            <br>
+                            <input class="multiplaEsc" type="radio" id="nadaDefinido" name="necessidadeFutura" value="5">
+                            <label for="nadaDefinido">Não possuo necessidades futuras e orçamento definido com relação
+                                aos investimentos </label>
+                            <br>
+                        </div>
+
+                        <input type="submit" class="itemContainer botao" id="descubra">
+                    </form>
+                </details>
+            </div>
+        </aside>
+        <section class="mesVig" id="listaMes">
+            <button class="botao itemContainer" id="jan" value="1">Jan</button>
+            <button class="botao itemContainer" id="fev" value="2">Fev</button>
+            <button class="botao itemContainer" id="mar" value="3">Mar</button>
+            <button class="botao itemContainer" id="abr" value="4">Abr</button>
+            <button class="botao itemContainer" id="mai" value="5">Mai</button>
+            <button class="botao itemContainer" id="jun" value="6">Jun</button>
+            <button class="botao itemContainer" id="jul" value="7">Jul</button>
+            <button class="botao itemContainer" id="ago" value="8">Ago</button>
+            <button class="botao itemContainer" id="set" value="9">Set</button>
+            <button class="botao itemContainer" id="out" value="10">Out</button>
+            <button class="botao itemContainer" id="nov" value="11">Nov</button>
+            <button class="botao itemContainer" id="dez" value="12">Dez</button>
+        </section>
+            
+            <main>
+                <section class="secaoCadastrada secao">
+                    <h2>Receitas:</h2>
+                    <ul class="listaCadastrada" id="receitas"></ul>
+
+                </section>
+
+                <section class="secaoCadastrada secao">
+                    <h2>Despesas:</h2>
+                    <ul class="listaCadastrada" id="despesas">
+                    </ul>
+                </section>
+                
+                <section class="secaoCadastrada secao">
+                    <h2>Economias:</h2>
+                    <ul class="listaCadastrada" id="economia">
+                    </ul>
+                </section>
+
+
+                <section class="areaResultados">
+                    <ul class="resultados">
+                        <li class="itemResultado itemContainer">Total de Receitas:<div class="reais" id="totalReceita"></div></li>
+                        <li class="itemResultado itemContainer">Total de Despesas:<div class="reais" id="totalDespesa"></div></li>
+                        <li class="itemResultado itemContainer">Economia:<div class="reais" id="totalEconomia"></div></li>
+                        <li class="itemResultado itemContainer">Remanescente:<div class="reais" id="totalRemanescente"></div></li>
+                    </ul>
+                    <a href="../index.html" class="voltar"><input type="button" value="Voltar" class="botao itemContainer"></a>
+                    <a href="relatorios.html" class="enviar"><input type="button" value="Prosseguir" class="botao itemContainer" id="botaoPrincipal"></a>
+                </section>
+        </main>
+
+        <footer class="flexCentral">
+            <span>Versão: 0.1.0</span>
+        </footer>
+    </div>
+    <script src="../JS/app.js"></script>
+    <script src="../JS/app-inv.js"></script>
+</body>
+
+
+</html>

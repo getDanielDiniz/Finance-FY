@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <title>Finance FY</title>
+            <link rel="shortcut icon" href="../img/Desktop - 1logo.png">
+            
+            <link rel="stylesheet" href="../CSS/reset.css">
+            <link rel="stylesheet" href="../CSS/style.css">
+            <link rel="stylesheet" href="../CSS/main-relatorios.css">
+            <link rel="stylesheet" href="../CSS/grid/grid-relatorios.css">
+            <link rel="stylesheet" href="../CSS/responsivo/style-responsivo.css">
+            <link rel="stylesheet" href="../CSS/responsivo/rela-responsivo.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">    
+        </head>
+
+        <body>
+            <header>
+                <div class="containerCabec flexCentral">
+                    <img src="../img/Desktop - 1logo.png" class="imgLogo">
+                </div>
+                <nav class="menuNav">
+                    <li><a class="itemNav" href="../index.html">Inicio</a></li>
+                    <li><a class="itemNav" href="cadastro.html">Cadastro</a></li>
+                    <li><a class="itemNav" href="relatorios.html">Relatórios</a></li>
+                </nav>
+            </header>
+            
+            <main>
+                <form id="mes">
+                    <select name="mesAtual" class="mesAtual itemContainer">
+                            <option>Mês</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Fev</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Abr</option>
+                            <option value="5">Mai</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Ago</option>
+                            <option value="9">Set</option>
+                            <option value="10">Out</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dez</option>
+                        </select>
+                        <button type="submit" class="botao itemContainer">Atualizar</button>
+                    </form>
+
+                    <section class="relatorios">
+                    
+                        <div class="real secao">
+                            <h2>Valor real por categoria:</h2>
+                            <ul class="lista" id="realValor">
+                            </ul>
+                        </div>
+
+                        <div class="ideal secao">
+                            <h2>Valor ideal por categoria:</h2>
+                            <ul class="lista" id="idealValor">
+                            </ul>
+                        </div>
+
+                        <div class="relMesAnte secao">
+                            <h2>Relatório do Mês Anterior:</h2>
+                            <ul class="lista" id="mesAnterior">
+                            </ul>
+                        </div>
+
+                        <div class="relMesAtual secao">
+                            <h2>Relatório do Mês:</h2>
+                            <ul class="lista" id="mesAtual">
+                            </ul>
+                        </div>
+
+                        <div class="relRitmo secao">
+                            <h2>Média por Categoria:</h2>
+                            <ul class="lista" id="listaRitmo">
+                            </ul>
+                        </div>
+
+                        <div class="cadSimu secao">
+                            <h2>Simulação:</h2>
+                                <form class="lista" id="listaCadSimu">
+                                </form>
+                        </div>
+                        
+                        <div class="relSimu secao">
+                            <h2>Simulação:</h2>
+                            <ul class="lista" id="listaRelSimu">
+                            </ul>
+                        </div>
+                    
+                    </section>
+            </main>
+
+            <footer class="flexCentral">
+                <span>Versão: 0.1.0</span>
+            </footer>
+            <script src="../JS/app-relatorios.js"></script>
+            <script src="../JS/app-simu.js"></script>
+        </body>
+    </html>

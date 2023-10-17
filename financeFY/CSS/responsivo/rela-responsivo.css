@@ -1,0 +1,10 @@
+@media screen and (max-width: 576px) {
+    .botao {
+        font-size: 0.8rem;
+    }
+
+    .relatorios {
+        display: flex;
+        flex-direction: column;
+    }
+}
